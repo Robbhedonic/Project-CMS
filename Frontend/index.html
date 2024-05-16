@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <script src="colormode.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="book.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="color-first">
+    <div class="first-line">
+      <div class="bgk">
+        <div class="navbar" id="myNavbar">
+          <div class="icon-company">
+            <div class="cube"></div>
+            <h5>Books Ducks</h5>
+          </div>
+          <div class="bar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="login.html">Log in</a>
+            <a href="register.html">Register</a>
+
+            <a href="#" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <div class="presentation">
+          <p>Reading helps you flourish and grow!</p>
+          <h1>Keep Reading</h1>
+          <button>See more</button>
+        </div>
+      </div>
+      <div class="exhibition"></div>
+      <div class="services">
+        <div class="filter" id="filter">
+          <label for="filterCriteria">Sort by:</label>
+          <select id="filterCriteria">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="calification">Rating</option>
+            <option value="date">Date</option>
+            <option value="pages">Pages</option>
+          </select>
+          <label for="filterOrder">Order:</label>
+          <select id="filterOrder">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+          <button onclick="sortAndDisplayBooks()">
+            Sort and Display Books
+          </button>
+        </div>
+        <main id="books-container"></main>
+      </div>
+
+      <footer>
+        <div>
+          <div class="footer-column">
+            <h4>a</h4>
+            <h4>b</h4>
+            <h4>c</h4>
+            <h4>d</h4>
+          </div>
+          <div class="footer-column">
+            <h4>a</h4>
+            <h4>b</h4>
+            <h4>c</h4>
+            <h4>d</h4>
+          </div>
+          <div class="footer-column">
+            <h4>a</h4>
+            <h4>b</h4>
+            <h4>c</h4>
+            <h4>d</h4>
+          </div>
+          <div class="footer-column">
+            <h4>a</h4>
+            <h4>b</h4>
+            <h4>c</h4>
+            <h4>d</h4>
+          </div>
+        </div>
+        <div class="logo-transaction">
+          <img src="../Frontend/books/visa-512.webp" alt="" />
+          <img src="../Frontend/books/mastercard-logo-1170x468.webp" alt="" />
+          <img src="../Frontend/books/swish.png" alt="" />
+          <img src="../Frontend/books/klarna.png" alt="" />
+          <img src="../Frontend/books/americanexpress.png" alt="" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

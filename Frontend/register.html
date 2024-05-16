@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="colormode.js" defer></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="first-line">
+      <div class="bgk">
+        <div class="navbar" id="myNavbar">
+          <div class="icon-company">
+            <div class="cube"></div>
+            <h5>Books Ducks</h5>
+          </div>
+          <div class="bar">
+            <a href="index.html">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="login.html">Log In</a>
+            <a href="#" class="active">Register</a>
+            <a href="#" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="login-wrapper">
+          <div class="form">
+             <h2>Register</h2>
+            <input type="text" id="registerUserName" placeholder="Username" />
+            <input
+              type="text"
+              id="registerUserEmail"
+              placeholder="Email@email.com"
+            />
+            <input
+              type="password"
+              id="registerUserPassword"
+              placeholder="Password"
+            />
+            <button id="registerBtn">Register</button>
+
+
+          </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

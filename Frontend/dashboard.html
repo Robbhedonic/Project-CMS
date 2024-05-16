@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="book.js"></script>
+    <script src="colormode.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="color-first">
+    <div class="first-line">
+      <div class="bgk">
+        <div class="navbar" id="myNavbar">
+          <div class="icon-company">
+            <div class="cube"></div>
+            <h5>Books Ducks</h5>
+          </div>
+          <div class="bar">
+            <a href="#" class="active">Profile</a>
+            <a href="favorite">Favorite Books</a>
+            <button id="logoutBtn">Log out</button>
+            <a href="#" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <div id="welcome-page" style="display: none">
+          <div class="welcome-box">
+            <h1>Welcome to the Dashboard, <span id="username"></span>!</h1>
+          </div>
+        </div>
+
+        <div id="login-wrapper">
+          <input type="text" id="loginUser" placeholder="Username" />
+          <input type="password" id="loginPassword" placeholder="Password" />
+          <button id="loginBtn">Login</button>
+        </div>
+      </div>
+
+      <div class="services">
+        <h1>Library</h1>
+        <div class="filter" id="filter">
+          <label for="filterCriteria">Sort by:</label>
+          <select id="filterCriteria">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="calification">Rating</option>
+            <option value="pages">Pages</option>
+          </select>
+          <label for="filterOrder">Order:</label>
+          <select id="filterOrder">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+          <button onclick="sortAndDisplayBooks()">Sort</button>
+        </div>
+        <main id="books-container"></main>
+        <h1>My Favorite Books</h1>
+        <div id="favorite-books-container"></div>
+      </div>
+    </div>
+  </body>
+</html>

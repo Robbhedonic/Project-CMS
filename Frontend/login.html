@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <script src="colormode.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="first-line">
+      <div class="bgk">
+        <div class="navbar" id="myNavbar">
+          <div class="icon-company">
+            <div class="cube"></div>
+            <h5>Books Ducks</h5>
+          </div>
+          <div class="bar">
+            <a href="index.html">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="#" class="active">Log in</a>
+            <a href="register.html">Register</a>
+            <a href="#" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <div id="login-wrapper">
+          <div class="form">
+            <h2>Login</h2>
+            <input type="text" id="loginUser" placeholder="Username or email" />
+            <input type="password" id="loginPassword" placeholder="Password" />
+            <button id="loginBtn">Log in</button>
+            <a href="register.html">Or create a new account</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

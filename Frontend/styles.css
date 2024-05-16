@@ -1,0 +1,325 @@
+#welcome-page{
+    display: none;
+}
+.darkPurple-bg {
+    background-color: #5D3FD3;
+    /* Morado oscuro */
+}
+
+.black-bg {
+    background-color: #000000;
+    /* Negro */
+}
+
+.white-bg {
+    background-color: #FFFFFF;
+    /* Blanco */
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: 0;
+    padding: 0;
+}
+.first-line{
+    border: solid 1px rgb(0, 0, 0);
+    margin: 1%;
+    border-radius: 20px;
+}
+
+
+.bgk{
+    background-image: url(../Frontend/books/book-with-world-inside-it_445983-4586.avif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    border-radius: 20px;
+    margin: 50px;
+
+}
+
+.navbar {
+    background-color: #b85dd900;
+    overflow: hidden;
+    float: center;
+    width: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: space-around;
+    padding-top: 4%;
+
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 1px white;
+    padding: 1%;
+    border-radius: 40px;
+    height: 20px;
+    width: 50%;
+}
+.navbar a {
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 4px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+}
+
+.navbar a.active {
+
+    color: white;
+    border-radius: 30px;
+    border: 1px white solid;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+        
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.icon-company{
+    display: flex;
+    flex-direction: column;
+    justify-self:flex-start ;
+    align-self: start;
+    color: white;
+   
+
+}
+.icon-company h5{
+    line-height: 0;
+}
+.cube{
+    display: flex;
+    justify-self: right;
+    width: 80px;
+    height: 80px;
+    background-image: url(../Frontend/books/book.jpeg);
+    background-attachment:unset;
+    background-size:cover;
+    border-radius: 20px;
+}
+.presentation{
+    margin-top: 10%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+    
+}
+.exhibition{
+    height: 200px;
+    width: 100%;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+    line-height: 0;
+    padding-bottom: 60px;
+}
+button{
+    background: rgb(34, 34, 34);
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-size: 10px;
+}
+p{
+    color: white;
+}
+
+.filter{
+    border: solid white 1px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#books-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+
+}
+
+.book-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    height: 280px;
+    margin: 1%;
+    background: white;
+    
+}
+
+.book-card img {
+    width: 80px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.book-card h2{
+    font-size: 14px;
+}
+
+.book-card p {
+    margin: 5px 0;
+    color: black;
+    font-size: 12px;
+    line-height: 8px;
+
+
+}
+aside{
+    margin-left: 4%;
+}
+footer{
+    border: solid 1px white;
+    margin: 2%;
+    border-radius: 16px;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+
+}
+.logo-transaction{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center ;
+    justify-content: center;
+    
+}
+
+.logo-transaction img{
+    height: 40px;
+    margin: 1%;
+  
+
+}
+#login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form{
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    padding-top: 4%;
+    margin: 20px;
+}
+.form button{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form  button:hover{
+    background: goldenrod;
+    
+
+}
+.form input{
+    border-radius: 10px;
+    border: none;
+    height: 26px;
+    width: 200px;
+    margin: 1%;
+}
+
+
+#welcome-page h1{
+
+    text-align: center;
+    font-size: 50px;
+
+}
+.welcome-box{
+
+    height: 400px;
+    line-height: 40px;
+  
+
+}
+.services h1{
+    color: black;
+}
+#books-container button:hover{
+    background-color: orange;
+    font-size: 10px;
+}
+
